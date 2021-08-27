@@ -35,6 +35,9 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+        <a-assets>
+      <a-asset-item id="sample" src="sample.glb"></a-asset-item>
+    </a-assets>
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
@@ -48,7 +51,7 @@
     >
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
         <a-entity
-            gltf-model="sample.gltf"
+            gltf-model="#sample"
             scale="5 5 5"
             position="50 150 0"
         >
