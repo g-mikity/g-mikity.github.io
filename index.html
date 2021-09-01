@@ -1,27 +1,151 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>ModelViewerSample</title>
-  </head>
-  <body>
-  <script 
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-  </script>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8">
+<title>サンプルページ</title>
+<meta name="description" content="サイトの説明文">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- OGP設定 -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="あなたのサイトURL" />
+<meta property="og:image" content="SNSで表示させたい画像のパス" />
+<meta property="og:title" content="ページタイトル" />
+<meta property="og:description" content="サイトの説明文" />
+<!-- Facebook用設定 -->
+<meta property="fb:app_id" content="facebookのApp ID" />
+<meta property="article:publisher" content="FacebookページのURL">
+<!-- Twitter用設定 -->
+<meta name="twitter:card" content="Twitterカードの種類">
+<meta name="twitter:site" content="@ユーザー名">
+<link rel="canonical" href="あなたのサイトURL">
+<!--<link rel="icon" type="image/png" href="ファビコンのパス">-->
+<!-- スタイルシートはここから -->	
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/queries.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">    
+</head>
+<body id="page-top">
+<!------------------------------------------------------------------------------------------------------------------>
+<header>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo-wt.png" alt="あなたのサイト名"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
 
-    <model-viewer  
-      ar
-      ar-placement="wall"
-      alt="testmodel"
-      src="./asset/heater/android/sample.glb" 
-      ios-src="./asset/heater/ios/sample3.usdz" 
-      style="width:800px;height:1000px;"
-      background-color="#70BCD1"
-      shadow-intensity="0.7"
-      camera-controls
-      interaction-prompt="auto"
-      auto-rotate ar magic-leap>
-    </model-viewer>
-  </body>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a href="#sec1" class="nav-link">menu</a></li>
+                <li class="nav-item"><a href="#sec2" class="nav-link">menu</a></li>
+                <li class="nav-item"><a href="#sec3" class="nav-link">menu</a></li>
+                <li class="nav-item"><a href="#sec4" class="nav-link">menu</a></li>
+                <li class="nav-item"><a href="#sec5" class="nav-link">menu</a></li>
+            </ul>
+        </div>
+     </div>    
+</nav>
+</header>
+<main>
+<!------------------------------------------------------------------------------------------------------------------>
+<div class="jumbotron-fluid mb-0">
+    <div class="container d-flex align-items-center">
+        <div>
+            <h1 class="mb-0">サンプル</h1>
+            <span>サンプル</span>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------>
+<section id="sec1">
+    <div class="container">
+
+        <h2 class="text-center">WORK</h2>
+        <p class="lead text-center font-weight-normal">
+        このページは無料のHTMLテンプレートを使用いて作成しています。
+        
+        </p>
+        <!--
+       <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card">
+                
+                    <img class="card-img-top" src="img/heater_sample.png" alt="ModelViewerのサンプル">
+                    <img class="card-img-top" src="img/qr_mvSample.png" alt="ModelViewerのサンプル">
+                    <div class="card-body">
+                      <h3 class="card-title">ModelViewerのサンプル</h3>
+                      <p class="card-text">
+                      QRコードを対応端末で読取り、ブラウザで開きます。</br>
+                      カメラへのアクセス許可を求められますので許可してください。</br>
+                      ※QRコードは(株)デンソーウェーブの登録商標です。
+                      </p>
+                    </div>
+                </div>
+            </div>
+            -->
+        <div class="card mb-3">
+            <div class="card-header">
+              WebAR体験サンプル
+            </div>
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="card-img-top p-2" src="img/heater_sample.png" alt="ModelViewerのサンプル">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">ModelViewerのサンプル</h3>
+                      <p class="card-text">
+                      QRコードを対応端末で読取り、ブラウザで開きます。</br>
+                      カメラへのアクセス許可を求められますので許可してください。</br>
+                      ※QRコードは(株)デンソーウェーブの登録商標です。
+                      </p>
+                    <img src="img/qr_mvSample.png" alt="ModelViewerのサンプル">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-sm-6 mb-5">
+                <div class="card">
+                    <!--
+                    <img class="card-img-top" src="img/work-image.jpg" alt="画像2">
+                    -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K4kalCmietg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">Youtube動画サンプル</h3>
+                      <p class="card-text">
+                      Youtube動画埋め込みを確認してます。
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="img/work-image.jpg" alt="画像3">
+                    <div class="card-body">
+                      <h3 class="card-title">WORK TITLE</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+<!------------------------------------------------------------------------------------------------------------------>
+</main>
+
+<footer id="footer">
+    <div id="copyright">
+        <p class="text-center mb-0 pt-3 pb-3">&copy;&ensp;あなたのサイト名 All Rights Reserved.</p>
+    </div><!-- .container-fluid -->
+</footer>
+<!------------------------------------------------------------------------------------------------------------------>
+<!-- javascript はここから -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
