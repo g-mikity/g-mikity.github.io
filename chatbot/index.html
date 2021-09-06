@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Peekobot
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!-- Page styles - make your own! -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Peekobot custom properties (CSS variable) - set these! -->
+    <style>
+        :root {
+            --peekobot-height: 80vh;
+            --peekobot-avatar: url("./images/heater_sample.png");
+        }
+    </style>
+    <!-- Peekobot styles -->
+    <link rel="stylesheet" href="peekobot.css">
+    
+    <!-- These provide in-browser transpilation of ES6 JS code to ES5 to support IE11 
+    <script src="https://unpkg.com/@babel/polyfill@7.6.0/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
+</head>
+
+<body>
+    <main id="main">
+        <div id="peekobot-container">
+            <div id="peekobot-inner">
+                <div id="peekobot"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="conversation.js"></script>
+    <script src="peekobot.js"></script>
+
+</body>
+
+</html>
