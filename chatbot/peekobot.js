@@ -33,14 +33,31 @@ const bot = function () {
             const choices = document.createElement('div');
             choices.classList.add('choices');
             step.options.forEach(function (option) {
-                const button = document.createElement(option.url ? 'a' : 'button');
-                button.classList.add('choice');
-                button.innerHTML = option.text;
-                if (option.url) {
-                    button.href = option.url;
-                } else {
-                    button.dataset.next = option.next;
-                }
+            	let button = undefined;
+            	switch(option.type) {
+            		case "url":
+                		button = document.createElement('a');
+		                button.classList.add('choice');
+		                button.innerHTML = option.text;
+                        button.href = option.url;
+	                    button.target = "_blank";
+	                    button.rel = "noopener";
+            			break;
+            		case "button":
+                		button = document.createElement('button');
+		                button.classList.add('choice');
+		                button.innerHTML = option.text;
+                		button.dataset.next = option.next;
+            			break;
+            		case "img":
+                		button = document.createElement('img');
+                		button.src = option.url;
+		                button.classList.add('choice');
+		                button.innerHTML = option.text;
+            			break;
+            		default:
+            			break;
+            	}
                 choices.appendChild(button);
             });
             insertNewChatItem(choices);

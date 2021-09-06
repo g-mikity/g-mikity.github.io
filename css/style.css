@@ -298,3 +298,21 @@ h1.page-ttl {
 .form1 .form-group{
     margin-bottom: 2rem;
 }
+
+
+/* *****チャットボタン***** */
+#chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* *****chatbot***** */
+
+.chatbotArea {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+}

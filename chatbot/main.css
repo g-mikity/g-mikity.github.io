@@ -7,9 +7,10 @@
 }
 
 body {
-  padding: 3rem 1rem;
+  /*padding: 3rem 1rem;*/
   font-family: sans-serif;
   color: var(--brand-black);
+  background-color: lavender;;
 }
 
 @media (min-width: 800px) {
@@ -62,7 +63,7 @@ p {
 
 header {
   width: 100%;
-  margin-bottom: 3rem;
+  /*margin-bottom: 3rem;*/
 }
 
 main {

@@ -50,44 +50,91 @@
  */
 const chat = {
     1: {
-        text: 'Hi! Welcome to Peekobot.',
+        text: 'こんにちは。今日はどうしましたか？',
         options: [
             {
-                text: '👋',
+                text: 'AR体験したい',
+                type: 'button',
                 next: 2
-            }
+            },
+            {
+                text: '製品情報を知りたい',
+                type: 'button',
+                next: 3
+            },
+            {
+                text: '直接問合せしたい',
+                type: 'button',
+                next: 6
+            },
         ]
     },
     2: {
-        text: 'Peekobot is a <em>really simple</em>, choice-driven chatbot framework made in <del>less than</del> just over 100 lines of vanilla JavaScript',
-        next: 3
-    },
-    3: {
-        text: 'But you probably knew that anyway.',
+        text: '体験する製品を選んでね。',
         options: [
             {
-                text: "<strong>Yes</strong>, I did!",
+                text: '製品Ａ',
+                type: 'button',
                 next: 4
             },
             {
-                text: "<strong>Nope</strong>, this is news.",
+                text: '製品Ｂ',
+                type: 'button',
+                next: 4
+            },
+            {
+                text: '製品Ｃ',
+                type: 'button',
+                next: 4
+            },
+        ]
+    },
+    3: {
+        text: '知りたい製品をどうぞ。',
+        options: [
+            {
+                text: '製品Ａ',
+                type: 'button',
                 next: 5
-            }
+            },
+            {
+                text: '製品Ｂ',
+                type: 'button',
+                next: 5
+            },
+            {
+                text: '製品Ｃ',
+                type: 'button',
+                next: 5
+            },
         ]
     },
     4: {
-        text: 'Awesome. This chat is still in development. Happy coding!',
-    },
-    5: {
-        text: 'Aah, you\'re missing out!',
-        next: 6
-    },
-    6: {
-        text: 'You should check it out on GitHub',
+        text: 'QRリーダーで読み込んでください。',
         options: [
             {
-                text: "Go to GitHub",
-                url: "https://github.com/peekobot/peekobot"
+		        type: 'img',
+		        url: "../img/qr_mvSample.png"
+            }
+        ]
+    },
+    5: {
+        text: 'はいどうぞ',
+        options: [
+            {
+                text: "クリックすると新しいタブで開きます",
+                type: 'url',
+                url: "../contact/index.html"
+            }
+        ]
+    },
+    6: {
+        text: 'こちらから問合せできます。',
+        options: [
+            {
+                text: "クリックすると新しいタブで開きます",
+                type: 'url',
+                url: "../contact/index.html"
             }
         ]
     }

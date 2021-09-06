@@ -28,3 +28,23 @@ $(document).ready(function () {
  $(".navbar-collapse").removeClass('show');
  });
 });
+
+
+/***************** TOPへ ******************/
+$(function() {
+    let chatBtn = $('#chatButton');    
+    chatBtn.show();
+    let chatbotArea = $('.chatbotArea');
+    chatbotArea.hide();
+
+    chatBtn.click(function () {
+        chatbotArea.show();
+        chatBtn.hide();
+        return false;
+    });
+    let closeBtn = $('.close');
+    closeBtn.click(function () {
+        chatbotArea.hide();
+        chatBtn.show();
+    });
+});

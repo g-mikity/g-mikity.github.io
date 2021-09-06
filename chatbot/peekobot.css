@@ -5,6 +5,7 @@
     padding: 1rem 1rem 2rem 1rem;
     height: var(--peekobot-height);
     position: relative;
+    background-color: white
 }
 #peekobot-inner {
     height: 100%;
