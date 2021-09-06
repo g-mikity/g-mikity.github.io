@@ -50,10 +50,22 @@ const bot = function () {
                 		button.dataset.next = option.next;
             			break;
             		case "img":
-                		button = document.createElement('img');
-                		button.src = option.url;
-		                button.classList.add('choice');
-		                button.innerHTML = option.text;
+            			if (option.url) {
+                			button = document.createElement('a');
+			                button.classList.add('choice');
+	                        button.href = option.url;
+		                    button.target = "_blank";
+		                    button.rel = "noopener";
+                			let child = document.createElement('img');
+                			child.src = option.src;
+		                	//child.innerHTML = option.text;
+		                    button.appendChild(child);
+                		} else {
+                			button = document.createElement('img');
+			                button.classList.add('choice');
+                			button.src = option.src;
+		                	//button.innerHTML = option.text;
+			            }
             			break;
             		default:
             			break;

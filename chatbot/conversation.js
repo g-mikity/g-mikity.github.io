@@ -114,7 +114,8 @@ const chat = {
         options: [
             {
 		        type: 'img',
-		        url: "../img/qr_mvSample.png"
+		        src: "../img/qr_mvSample.png",
+		        url: "../mvSample.html"
             }
         ]
     },
