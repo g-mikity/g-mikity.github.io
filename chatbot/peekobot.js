@@ -62,9 +62,9 @@ const bot = function () {
 		                    button.appendChild(child);
                 		} else {
                 			button = document.createElement('img');
-			                //button.classList.add('choice');
+			                button.classList.add('choice');
                 			button.src = option.src;
-		                	//button.innerHTML = option.text;
+		                	button.innerHTML = option.text;
 			            }
             			break;
             		default:
