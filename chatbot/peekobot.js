@@ -97,11 +97,11 @@ const bot = function () {
 
         if (!e.target.classList.contains('choice') || 'A' === e.target.tagName) {
             // Target isn't a button, but could be a child of a button.
-            var button = e.target.closest('#peekobot-container .choice');
+            //var button = e.target.closest('#peekobot-container .choice');
 
-            if (button !== null) {
-                button.click();
-            }
+            //if (button !== null) {
+            //    button.click();
+            //}
 
             return;
         }
